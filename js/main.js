@@ -62,6 +62,42 @@
       '<i class="far fa-chevron-right"></i>',
     ],
   });
+  $(".product-card__image__slider-active").owlCarousel({
+    loop: false,
+    margin: 0,
+    items: 1,
+    responsiveClass: true,
+    nav: true,
+    dots: true,
+    navText: [
+      '<i class="far fa-chevron-left"></i>',
+      '<i class="far fa-chevron-right"></i>',
+    ],
+  });
+  $(".sug-slider-active").owlCarousel({
+    loop: false,
+    margin: 32,
+    items: 4,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="far fa-chevron-left"></i>',
+      '<i class="far fa-chevron-right"></i>',
+    ],
+  });
+  $(".testimonial-slider-active").owlCarousel({
+    loop: false,
+    margin: 0,
+    items: 1,
+    responsiveClass: true,
+    nav: false,
+    dots: true,
+    navText: [
+      '<i class="far fa-chevron-left"></i>',
+      '<i class="far fa-chevron-right"></i>',
+    ],
+  });
 })(jQuery);
 
 $(document).ready(function () {

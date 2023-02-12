@@ -1,7 +1,8 @@
 /* default-button */
 .default-button {
     font-weight: 16px;
-    padding: 10px 24px 11px;
+    gap: 14px;
+    padding: 8px 23px 9px;
     min-height: 46px;
     font-weight: 500;
     border-radius: 50px;
@@ -11,6 +12,22 @@
     text-align: center;
     background: var(--theme__color1);
     color: #fff;
+    border: 1px solid transparent;
+}
+.default-button:hover {
+    background: #4338CA;
+    color: #fff;
+}
+.default-button i {
+    font-size: 14px;
+}
+
+.default-button--bordered {
+    border-color: #374151;
+    background: #111827;
+}
+.default-button--bordered:hover {
+    background: #1F2937;
 }
 /* default-button-end */
 
