@@ -47,6 +47,25 @@
         border-radius: 40px;
         height: 470px;
     }
+
+
+    .l-hero__content {
+        padding: 70px 0;
+    }
+    .l-hero__content .h1 {
+        font-size: 48px;
+        margin: 0 0 25px;
+    }
+    .l-hero__content::after {
+        right: 129px;
+    }
+    .l-hero__image {
+        width: calc(100% - 220px);
+        height: 545px;
+    }
+    .pv-product__wrapper {
+        --grid-item: 1;
+    }
     
 }
 
@@ -57,6 +76,11 @@
     }
     .hero__search__a {
         min-height: 70px;
+    }
+
+
+    .hero__search__a .tc .h4-input {
+        width: 160px;
     }
 }
 
@@ -255,6 +279,21 @@
         margin-top: 80px;
         padding: 80px 0;
     }
+
+
+    .l-hero__image {
+        width: calc(100% - 120px);
+        height: 360px;
+    }
+    .pv-section {
+        padding: 80px 0;
+    }
+    .pv-title-filter {
+        margin: 0 0 30px;
+    }
+    .pv-section__title {
+        margin-bottom: 45px;
+    }
 }
 
 
@@ -392,6 +431,50 @@
         width: 50%;
     }
 
+
+    .l-hero__content .h1 {
+        font-size: 36px;
+        margin: 0 0 25px;
+    }
+    .l-hero__content {
+        padding: 55px 0;
+    }
+    .l-hero__content::after {
+        right: 55px;
+    }
+    .l-hero__image {
+        width: calc(100% - 50px);
+        height: 320px;
+    }
+
+    .product-card.product-card--lnr {
+        padding: 12px;
+        flex-direction: column;
+    }
+    .product-card.product-card--lnr .fav-button {
+        top: 22px;
+        right: 22px;
+    }
+    .product-card.product-card--lnr .product-card__image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: initial;
+    }
+    .product-card.product-card--lnr .product-card__image__slider {
+        border-radius: 12px 12px 0 0;
+    }
+    .product-card.product-card--lnr .product-card__tc {
+        flex-grow: 1;
+        padding: 15px 0px 0px 0px;
+        width: 100%;
+    }
+    .product-card__tc__top .loc-wrap .loc {
+        font-size: 12px;
+    }
+    .product-card__tc__top .loc-wrap .loc .icon {
+        display: none;
+    }
 }
 
 

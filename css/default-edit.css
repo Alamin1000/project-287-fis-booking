@@ -336,10 +336,58 @@
   .ui-slider .ui-slider-range {
     background: #22D3EE !important;
   }
-  #slider-range, #slider-range-mobile {
+  #slider-range, #slider-range-mobile, #slider-range-pd {
     background: #fff;
     height: 4px;
     border-radius: 4px;
     border: none;
   }
 /* ---range-slider-default---end */
+
+
+/* ---nice-input-nav--- */
+.nice-input-nav {
+    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 31px;
+}
+.nice-input-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nice-input-nav__item h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #e2e8f0;
+}
+
+.nice-input-box-1 {
+    gap: 13px;
+    display: flex;
+    align-items: center;
+}
+.nice-input-box-1 .button {
+    width: 31px;
+    height: 31px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #334155;
+    border-radius: 50%;
+    background: transparent;
+    color: #e2e8f0c2;
+    font-weight: 200;
+}
+.nice-input-box-1 .input {
+    width: 25px;
+    font-size: 16px;
+    color: #e2e8f0;
+    background: transparent;
+    text-align: center;
+    border: none;
+}
+/* ---nice-input-nav---end */

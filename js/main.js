@@ -194,6 +194,22 @@
     );
   });
 
+  // slider-range-pd
+  $(function () {
+    $("#slider-range-pd").slider({
+      range: true,
+      min: 10000,
+      max: 100000000,
+      values: [20000, 40000000],
+      slide: function (event, ui) {
+        $("#min-amount-pd").val("$" + ui.values[0]);
+        $("#max-amount-pd").val("$" + ui.values[1]);
+      },
+    });
+    $("#min-amount-pd").val("$" + $("#slider-range-pd").slider("values", 0));
+    $("#max-amount-pd").val("$" + $("#slider-range-pd").slider("values", 1));
+  });
+
   // hero-dropdown
   $(".hero__search__a").click(function () {
     let thisIs = this;
@@ -207,6 +223,28 @@
       } else {
         allItem[i].classList.remove("show");
       }
+    }
+  });
+
+  // drop__down
+  $(".drop__toggle").click(function () {
+    let thisIs = this;
+    let thisItem = thisIs.closest(".drop__item");
+    thisItem.classList.toggle("show");
+    let allItem = $(".drop__item");
+
+    for (var i in allItem) {
+      if (allItem[i] == thisItem) {
+        delete allItem[i];
+      } else {
+        allItem[i].classList.remove("show");
+      }
+    }
+  });
+  $(document).mouseup(function (e) {
+    var container = $(".drop__item");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      $(".drop__item").removeClass("show");
     }
   });
 
@@ -238,3 +276,43 @@ $(document).ready(function () {
   // preloader
   $("#preloader").fadeOut(500);
 });
+
+// custom-nice-input
+$(".nice-input")
+  .siblings(".minus-button")
+  .click(function () {
+    if (
+      $(this).siblings(".nice-input").attr("value") >
+      $(this).siblings(".nice-input").attr("min") * 1
+    ) {
+      $(this)
+        .siblings(".nice-input")
+        .attr("value", $(this).siblings(".nice-input").attr("value") - 1);
+      var source = $(this)
+        .parents(".shopping-bag-item")
+        .find(".option.price .currency");
+      var target = $(this)
+        .parents(".shopping-bag-item")
+        .find(".option.subtotal .currency");
+      target.text(target.text() - source.text() * 1);
+    }
+  });
+$(".nice-input")
+  .siblings(".plus-button")
+  .click(function () {
+    if (
+      $(this).siblings(".nice-input").attr("value") <
+      $(this).siblings(".nice-input").attr("max") * 1
+    ) {
+      $(this)
+        .siblings(".nice-input")
+        .attr("value", $(this).siblings(".nice-input").attr("value") - -1);
+      var source = $(this)
+        .parents(".shopping-bag-item")
+        .find(".option.price .currency");
+      var target = $(this)
+        .parents(".shopping-bag-item")
+        .find(".option.subtotal .currency");
+      target.text(target.text() - source.text() * -1);
+    }
+  });
