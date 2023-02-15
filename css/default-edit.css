@@ -23,11 +23,13 @@
 }
 
 .default-button--bordered {
-    border-color: #374151;
-    background: #111827;
+    border-color: #E5E7EB;
+    background: #fff;
+    color: var(--color-p);
 }
 .default-button--bordered:hover {
-    background: #1F2937;
+    background: #F3F4F6;
+    color: var(--color-p);
 }
 
 .default-button--theme2 {
@@ -39,8 +41,8 @@
 }
 
 .text-button {
-    font-weight: 700;
-    color: #e2e8f0;
+    font-weight: 500;
+    color: var(--color);
     text-decoration: underline !important;
 }
 /* default-button-end */
@@ -62,8 +64,8 @@
     content: '';
     height: 100%;
     width: 100%;
-    background: #334155;
-    border: 1px solid #ffffff44;
+    background: var(--background);
+    border: 1px solid var(--color-p);
     position: absolute;
     top: 0;
     left: 0;
@@ -331,13 +333,13 @@
     border: 2px solid #22D3EE !important;
   }
   .ui-widget-content .ui-state-active {
-    box-shadow: 0 0 0 5px #ffffffb9;
+    box-shadow: 0 0 0 5px rgba(34, 211, 238, 0.725);
   }
   .ui-slider .ui-slider-range {
     background: #22D3EE !important;
   }
   #slider-range, #slider-range-mobile, #slider-range-pd {
-    background: #fff;
+    background: #E9E9E9;
     height: 4px;
     border-radius: 4px;
     border: none;

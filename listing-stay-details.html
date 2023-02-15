@@ -14,6 +14,10 @@
       href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
     <link rel="stylesheet" href="css/nice-select.css" />
     <link rel="stylesheet" href="css/jquery-ui.1.10.4.css" />
     <link rel="stylesheet" href="css/default-edit.css" />
@@ -471,7 +475,7 @@
       <!-- search-canvas-end -->
 
       <!-- header-section -->
-      <header class="header-section" id="sticky-header">
+      <header class="header-section header--border-less" id="sticky-header">
         <div class="header-in">
           <div class="container">
             <div class="header-section__inner">
@@ -1093,230 +1097,388 @@
 
       <!-- main -->
       <main>
-        <!-- l-hero-section -->
-        <section class="l-hero-section">
+        <!-- gallery-section -->
+        <section class="gallery-section py-0">
           <div class="container">
-            <div class="l-hero-section__inner">
-              <div class="l-hero__row">
-                <div class="l-hero__content">
-                  <h1 class="h1">Tokyo, Jappan</h1>
-                  <ul class="prop-line-ul">
-                    <div class="prop-snl">
-                      <div class="icon"><i class="fal fa-map-marked"></i></div>
-                      <span class="txt">Jappan</span>
-                    </div>
-                    <div class="prop-snl">
-                      <div class="icon"><i class="far fa-home"></i></div>
-                      <span class="txt">112 properties</span>
-                    </div>
-                  </ul>
+            <div class="gallery-section__inner">
+              <div class="gallery__grid">
+                <div class="gallery__grid__item gallery__grid__item--max">
+                  <img src="images/gallery-img-1.jpg" alt="" class="img" />
+                  <a href="#" class="all-button">
+                    <i class="fad fa-th-large"></i>
+                    <span class="txt">Show all photos</span>
+                  </a>
                 </div>
-                <div class="l-hero__image">
-                  <img src="images/listing-real-state.png" alt="" class="img" />
+                <div class="gallery__grid__item">
+                  <img src="images/gallery-img-1.jpg" alt="" class="img" />
+                </div>
+                <div class="gallery__grid__item">
+                  <img src="images/gallery-img-1.jpg" alt="" class="img" />
+                </div>
+                <div class="gallery__grid__item">
+                  <img src="images/gallery-img-1.jpg" alt="" class="img" />
+                </div>
+                <div class="gallery__grid__item">
+                  <img src="images/gallery-img-1.jpg" alt="" class="img" />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <!-- gallery-section-end -->
 
-              <div
-                class="hero__search__wrap hero__search__wrap--at-listing d-lg-block d-none"
-              >
-                <ul class="hero-search-nav nav">
-                  <li>
-                    <a class="active" href="#">
-                      <span class="ellipse"></span>
-                      <span class="txt">Buy</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="ellipse"></span>
-                      <span class="txt">Rent</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <span class="ellipse"></span>
-                      <span class="txt">Sell</span>
-                    </a>
-                  </li>
-                </ul>
-                <div class="hero__search__tab-content">
-                  <div class="hero__search__tab-pane">
-                    <div class="hero__search__content">
-                      <div class="hero__search__content__inner">
-                        <div class="hero__search__single">
-                          <div class="hero__search__a">
+        <!-- listing-details-section -->
+        <section class="listing-details-section">
+          <div class="container">
+            <div class="listing-details-section__inner">
+              <div class="lds__s-row">
+                <div class="lds__s-row__left">
+                  <!-- lds-box -->
+                  <div class="lds-box">
+                    <div class="lds-box__srt">
+                      <div class="lds-box__str__top">
+                        <div class="cheap">Wooden house</div>
+                        <div class="it-menu">
+                          <a href="#" class="it-ma">
                             <div class="icon">
-                              <i class="far fa-map-marker-alt"></i>
+                              <i class="fal fa-sign-out fa-rotate-270"></i>
                             </div>
-                            <div class="tc">
-                              <input
-                                class="h4-input"
-                                type="text"
-                                placeholder="Location"
-                              />
-                              <p>Where are you going?</p>
-                            </div>
-                          </div>
-                          <div class="hero__search__dropdown">
-                            <div class="hero__search__dropdown__title">
-                              <h4>Recent searches</h4>
-                            </div>
-                            <ul class="hsd-menu">
-                              <li>
-                                <a href="#">
-                                  <div class="icon">
-                                    <i class="far fa-clock"></i>
-                                  </div>
-                                  <span class="txt"
-                                    >Hamptons, Suffolk County, NY</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="icon">
-                                    <i class="far fa-clock"></i>
-                                  </div>
-                                  <span class="txt"
-                                    >Hamptons, Suffolk County, NY</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="icon">
-                                    <i class="far fa-clock"></i>
-                                  </div>
-                                  <span class="txt"
-                                    >Hamptons, Suffolk County, NY</span
-                                  >
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">
-                                  <div class="icon">
-                                    <i class="far fa-clock"></i>
-                                  </div>
-                                  <span class="txt"
-                                    >Hamptons, Suffolk County, NY</span
-                                  >
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="hero__search__single">
-                          <div class="hero__search__a">
-                            <div class="icon"><i class="far fa-home"></i></div>
-                            <div class="tc">
-                              <h4>Duplex House</h4>
-                              <p>Property type</p>
-                            </div>
-                          </div>
-                          <div class="hero__search__dropdown">
-                            <ul class="sel-ul">
-                              <li>
-                                <label class="sel-label">
-                                  <input
-                                    type="checkbox"
-                                    class="checkbox checkbox-model"
-                                  />
-                                  <div class="sel-label-tc">
-                                    <h4>Duplex House</h4>
-                                    <p>Have a place to yourself</p>
-                                  </div>
-                                </label>
-                              </li>
-                              <li>
-                                <label class="sel-label">
-                                  <input
-                                    type="checkbox"
-                                    class="checkbox checkbox-model"
-                                  />
-                                  <div class="sel-label-tc">
-                                    <h4>Ferme House</h4>
-                                    <p>
-                                      Have your own room and share some common
-                                      spaces
-                                    </p>
-                                  </div>
-                                </label>
-                              </li>
-                              <li>
-                                <label class="sel-label">
-                                  <input
-                                    type="checkbox"
-                                    class="checkbox checkbox-model"
-                                  />
-                                  <div class="sel-label-tc">
-                                    <h4>Chalet House</h4>
-                                    <p>
-                                      Have a private or shared room in a
-                                      boutique hotel, hostel, and more
-                                    </p>
-                                  </div>
-                                </label>
-                              </li>
-                              <li>
-                                <label class="sel-label">
-                                  <input
-                                    type="checkbox"
-                                    class="checkbox checkbox-model"
-                                  />
-                                  <div class="sel-label-tc">
-                                    <h4>Maison House</h4>
-                                    <p>
-                                      Stay in a shared space, like a common room
-                                    </p>
-                                  </div>
-                                </label>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="hero__search__single">
-                          <div class="hero__search__a">
+                            <span class="txt">Share</span>
+                          </a>
+                          <a href="#" class="it-ma">
                             <div class="icon">
-                              <i class="far fa-usd-circle"></i>
+                              <i class="fal fa-heart"></i>
                             </div>
-                            <div class="tc">
-                              <h4>$2,254k ~ $6,779k</h4>
-                              <p>Choose price range</p>
-                            </div>
-                            <div class="hs__src__button">
-                              <i class="far fa-search"></i>
-                            </div>
+                            <span class="txt">Save</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="lds-box__str__tc">
+                        <h2 class="">Beach House in Collingwood</h2>
+                        <div class="it-ma loc">
+                          <div class="icon">
+                            <i class="far fa-map-marker-alt"></i>
                           </div>
-                          <div class="hero__search__dropdown">
-                            <div class="hero__search__dropdown__title">
-                              <h4>Range Price</h4>
+                          <span class="txt">Tokyo, Jappan</span>
+                        </div>
+                      </div>
+                      <div class="lds-box__str__bt">
+                        <div class="it-ma">
+                          <div class="icon">
+                            <i class="far fa-user"></i>
+                          </div>
+                          <span class="txt">6 guests</span>
+                        </div>
+                        <div class="it-ma">
+                          <div class="icon">
+                            <i class="far fa-bed-alt"></i>
+                          </div>
+                          <span class="txt">6 beds</span>
+                        </div>
+                        <div class="it-ma">
+                          <div class="icon">
+                            <i class="far fa-bath fa-flip-horizontal"></i>
+                          </div>
+                          <span class="txt">3 baths</span>
+                        </div>
+                        <div class="it-ma">
+                          <div class="icon">
+                            <i class="fal fa-door-open"></i>
+                          </div>
+                          <span class="txt">2 bedrooms</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- lds-box-end -->
+
+                  <!-- lds-box -->
+                  <div class="lds-box">
+                    <div class="lds__content">
+                      <h3>Stay information</h3>
+                      <span class="srt-line"></span>
+                      <p>
+                        Providing lake views, The Symphony 9 Tam Coc in Ninh
+                        Binh provides accommodation, an outdoor swimming pool, a
+                        bar, a shared lounge, a garden and barbecue facilities.
+                        Complimentary WiFi is provided.
+                      </p>
+                      <p>
+                        There is a private bathroom with bidet in all units,
+                        along with a hairdryer and free toiletries.
+                      </p>
+                      <p>
+                        The Symphony 9 Tam Coc offers a terrace. Both a bicycle
+                        rental service and a car rental service are available at
+                        the accommodation, while cycling can be enjoyed nearby.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- lds-box-end -->
+
+                  <!-- lds-box -->
+                  <div class="lds-box">
+                    <div class="lds__content">
+                      <h3>Amenities</h3>
+                      <p>About the property's amenities and services</p>
+                      <span class="srt-line"></span>
+                      <div class="lds-ai-grid">
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-key"></i>
+                          </div>
+                          <span class="txt">la-key</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-luggage-cart"></i>
+                          </div>
+                          <span class="txt">la-luggage-cart</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-shower"></i>
+                          </div>
+                          <span class="txt">la-shower</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-smoking"></i>
+                          </div>
+                          <span class="txt">la-smoking</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-snowflake"></i>
+                          </div>
+                          <span class="txt">la-snowflake</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-spa"></i>
+                          </div>
+                          <span class="txt">la-spa</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-suitcase"></i>
+                          </div>
+                          <span class="txt">la-suitcase</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-suitcase-rolling"></i>
+                          </div>
+                          <span class="txt">la-suitcase-rolling</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-swimmer"></i>
+                          </div>
+                          <span class="txt">la-swimmer</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-swimming-pool"></i>
+                          </div>
+                          <span class="txt">la-swimming-pool</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-tv"></i>
+                          </div>
+                          <span class="txt">la-tv</span>
+                        </div>
+                        <div class="lds-ai__single">
+                          <div class="icon">
+                            <i class="text-3xl las la-umbrella-beach"></i>
+                          </div>
+                          <span class="txt">la-umbrella-beach</span>
+                        </div>
+                      </div>
+                      <span class="srt-line"></span>
+                      <a
+                        href="#"
+                        class="default-button default-button--bordered bottom-button"
+                        >View more 20 amenities</a
+                      >
+                    </div>
+                  </div>
+                  <!-- lds-box-end -->
+
+                  <!-- lds-box -->
+                  <div class="lds-box">
+                    <div class="lds__content">
+                      <h3>Room Rates</h3>
+                      <p>Prices may increase on weekends or holidays</p>
+                      <span class="srt-line"></span>
+                      <div class="lds-list">
+                        <div class="lr">
+                          <div class="clm">Monday - Thursday</div>
+                          <div class="clm">$199</div>
+                        </div>
+                        <div class="lr">
+                          <div class="clm">Monday - Thursday</div>
+                          <div class="clm">$199</div>
+                        </div>
+                        <div class="lr">
+                          <div class="clm">Friday - Sunday</div>
+                          <div class="clm">$219</div>
+                        </div>
+                        <div class="lr">
+                          <div class="clm">Rent by month</div>
+                          <div class="clm">-8.34 %</div>
+                        </div>
+                        <div class="lr">
+                          <div class="clm">Minimum number of nights</div>
+                          <div class="clm">1 night</div>
+                        </div>
+                        <div class="lr">
+                          <div class="clm">Max number of nights</div>
+                          <div class="clm">90 nights</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- lds-box-end -->
+
+                  <!-- lds-box -->
+                  <div class="lds-box">
+                    <div class="lds__content">
+                      <h3>Host Information</h3>
+                      <span class="srt-line"></span>
+                      <div class="lds-host__info">
+                        <div class="lds-host__info__auth">
+                          <div class="lds-host__info__auth__image">
+                            <div class="tick">
+                              <i class="far fa-check"></i>
                             </div>
-                            <div class="range-content">
-                              <div class="range-slider" id="slider-range"></div>
-                              <div class="range-slider-values-wrap">
-                                <div class="range-slider-value-single">
-                                  <h4>Min price</h4>
-                                  <input
-                                    type="text"
-                                    class="input"
-                                    id="min-amount"
-                                    readonly
-                                  />
-                                </div>
-                                <div class="range-slider-value-single">
-                                  <h4>Min price</h4>
-                                  <input
-                                    type="text"
-                                    class="input"
-                                    type="text"
-                                    id="max-amount"
-                                    readonly
-                                  />
-                                </div>
-                              </div>
-                            </div>
+                            <img src="images/user.png" alt="" class="img" />
+                          </div>
+                          <div class="lds-host__info__auth__tc">
+                            <h4 class="mb-0">Kevin Francis</h4>
                           </div>
                         </div>
+                        <p>
+                          Providing lake views, The Symphony 9 Tam Coc in Ninh
+                          Binh provides accommodation, an outdoor swimming pool,
+                          a bar, a shared lounge, a garden and barbecue
+                          facilities...
+                        </p>
+                        <div class="lds-host-im">
+                          <div class="lds-host-im-s">
+                            <div class="icon">
+                              <i class="fal fa-calendar"></i>
+                            </div>
+                            <span class="txt">Joined in March 2016</span>
+                          </div>
+                          <div class="lds-host-im-s">
+                            <div class="icon"><i class="fal fa-clock"></i></div>
+                            <span class="txt"
+                              >Fast response - within a few hours</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <span class="srt-line"></span>
+                      <a
+                        href="#"
+                        class="default-button default-button--bordered bottom-button"
+                        >See host profile</a
+                      >
+                    </div>
+                  </div>
+                  <!-- lds-box-end -->
+
+                  <!-- lds-box -->
+                  <div class="lds-box">
+                    <div class="lds__content">
+                      <h3>Location</h3>
+                      <p>
+                        San Diego, CA, United States of America (SAN-San Diego
+                        Intl.)
+                      </p>
+                      <span class="srt-line"></span>
+                      <div class="lds-map">
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29156.147850007255!2d90.32064725!3d24.01277505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbn!2sbd!4v1676495313630!5m2!1sbn!2sbd"
+                          width="600"
+                          height="450"
+                          style="border: 0"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- lds-box-end -->
+
+                  <!-- lds-box -->
+                  <div class="lds-box">
+                    <div class="lds__content">
+                      <h3>Things to know</h3>
+                      <span class="srt-line"></span>
+                      <div class="lds-in-g">
+                        <h4>Cancellation policy</h4>
+                        <p>
+                          Refund 50% of the booking value when customers cancel
+                          the room within 48 hours after successful booking and
+                          14 days before the check-in time. <br />
+                          Then, cancel the room 14 days before the check-in
+                          time, get a 50% refund of the total amount paid (minus
+                          the service fee).
+                        </p>
+                      </div>
+                      <span class="srt-line"></span>
+                      <div class="lds-in-g">
+                        <h4>Check-in time</h4>
+                        <div class="check-ttbl">
+                          <div class="tr">
+                            <div class="clm">Check-in</div>
+                            <div class="clm">08:00 am - 12:00 am</div>
+                          </div>
+                          <div class="tr">
+                            <div class="clm">Check-out</div>
+                            <div class="clm">02:00 pm - 04:00 pm</div>
+                          </div>
+                        </div>
+                      </div>
+                      <span class="srt-line"></span>
+                      <div class="lds-in-g">
+                        <h4>Special Note</h4>
+                        <ul class="ul-x">
+                          <li>
+                            Ban and I will work together to keep the landscape
+                            and environment green and clean by not littering,
+                            not using stimulants and respecting people around.
+                          </li>
+                          <li>Do not sing karaoke past 11:30</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- lds-box-end -->
+                </div>
+
+                <div class="lds__s-row__right">
+                  <div class="lds-box lds__right__sticky">
+                    <div class="lds-box__fnl">
+                      <div class="lds-box__fnl__price">
+                        $119 <span class="sml">/night</span>
+                      </div>
+                      <div class="lds-box__fnl__usr">
+                        <div class="image">
+                          <img src="images/user.png" alt="" class="img" />
+                          <span class="tick"><i class="far fa-check"></i></span>
+                        </div>
+                        <div class="tc">
+                          <span class="ass">Hosted by</span>
+                          <span>Kevin Francis</span>
+                        </div>
+                      </div>
+                      <div class="lds-box__fnl__bt">
+                        <a href="#" class="default-button w-100">Contact</a>
                       </div>
                     </div>
                   </div>
@@ -1325,941 +1487,7 @@
             </div>
           </div>
         </section>
-        <!-- l-hero-section-end -->
-
-        <!-- pv-section -->
-        <section class="pv-section">
-          <div class="container">
-            <div class="pv-section__inner">
-              <div class="pv-section__title sec-title cont-blk">
-                <h2 class="h2">Property in Tokyo</h2>
-                <p>233 Property · Aug 12 - 18</p>
-              </div>
-
-              <div class="pv-title-filter">
-                <div class="pv-nav">
-                  <div class="pv-nav-item drop__item d-lg-block d-none">
-                    <a href="javascript:void(0)" class="drop__toggle">
-                      <span class="txt">Type of property</span>
-                      <i class="far fa-chevron-down chevron"></i>
-                    </a>
-                    <div class="hero__search__dropdown pb-0 drop__down">
-                      <ul class="sel-ul">
-                        <li>
-                          <label class="sel-label">
-                            <input
-                              type="checkbox"
-                              class="checkbox checkbox-model"
-                            />
-                            <div class="sel-label-tc">
-                              <h4>Duplex House</h4>
-                              <p>Have a place to yourself</p>
-                            </div>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="sel-label">
-                            <input
-                              type="checkbox"
-                              class="checkbox checkbox-model"
-                            />
-                            <div class="sel-label-tc">
-                              <h4>Ferme House</h4>
-                              <p>
-                                Have your own room and share some common spaces
-                              </p>
-                            </div>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="sel-label">
-                            <input
-                              type="checkbox"
-                              class="checkbox checkbox-model"
-                            />
-                            <div class="sel-label-tc">
-                              <h4>Chalet House</h4>
-                              <p>
-                                Have a private or shared room in a boutique
-                                hotel, hostel, and more
-                              </p>
-                            </div>
-                          </label>
-                        </li>
-                        <li>
-                          <label class="sel-label">
-                            <input
-                              type="checkbox"
-                              class="checkbox checkbox-model"
-                            />
-                            <div class="sel-label-tc">
-                              <h4>Maison House</h4>
-                              <p>Stay in a shared space, like a common room</p>
-                            </div>
-                          </label>
-                        </li>
-                      </ul>
-                      <div class="hero__search__dropdown__bottom">
-                        <a
-                          href="#"
-                          class="default-button default-button--bordered"
-                          >Clear</a
-                        >
-                        <a
-                          href="#"
-                          class="default-button default-button--theme2"
-                          >Apply</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pv-nav-item drop__item d-lg-block d-none">
-                    <a href="javascript:void(0)" class="drop__toggle">
-                      <span class="txt">Rooms of Beds</span>
-                      <i class="far fa-chevron-down chevron"></i>
-                    </a>
-                    <div class="hero__search__dropdown pb-0 drop__down">
-                      <div class="nice-input-nav">
-                        <div class="nice-input-nav__item">
-                          <h4 class="mb-0">Beds</h4>
-                          <div class="nice-input-box nice-input-box-1">
-                            <button class="minus-button button">-</button>
-                            <input
-                              min="0"
-                              max="10"
-                              type="text"
-                              class="input nice-input"
-                              value="0"
-                            />
-                            <button class="plus-button button">+</button>
-                          </div>
-                        </div>
-                        <div class="nice-input-nav__item">
-                          <h4 class="mb-0">Bedrooms</h4>
-                          <div class="nice-input-box nice-input-box-1">
-                            <button class="minus-button button">-</button>
-                            <input
-                              min="0"
-                              max="10"
-                              type="text"
-                              class="input nice-input"
-                              value="0"
-                            />
-                            <button class="plus-button button">+</button>
-                          </div>
-                        </div>
-                        <div class="nice-input-nav__item">
-                          <h4 class="mb-0">Bathrooms</h4>
-                          <div class="nice-input-box nice-input-box-1">
-                            <button class="minus-button button">-</button>
-                            <input
-                              min="0"
-                              max="10"
-                              type="text"
-                              class="input nice-input"
-                              value="0"
-                            />
-                            <button class="plus-button button">+</button>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="hero__search__dropdown__bottom">
-                        <a
-                          href="#"
-                          class="default-button default-button--bordered"
-                          >Clear</a
-                        >
-                        <a
-                          href="#"
-                          class="default-button default-button--theme2"
-                          >Apply</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pv-nav-item drop__item">
-                    <a class="activated drop__toggle" href="javascript:void(0)">
-                      <span class="txt">$0-$1,000</span>
-                      <span class="close"><i class="fal fa-times"></i></span>
-                    </a>
-                    <div class="hero__search__dropdown pb-0 drop__down">
-                      <div class="hero__search__dropdown__title">
-                        <h4>Range Price</h4>
-                      </div>
-                      <div class="range-content">
-                        <div class="range-slider" id="slider-range-pd"></div>
-                        <div class="range-slider-values-wrap">
-                          <div class="range-slider-value-single">
-                            <h4>Min price</h4>
-                            <input
-                              type="text"
-                              class="input"
-                              id="min-amount-pd"
-                              readonly
-                            />
-                          </div>
-                          <div class="range-slider-value-single">
-                            <h4>Min price</h4>
-                            <input
-                              type="text"
-                              class="input"
-                              type="text"
-                              id="max-amount-pd"
-                              readonly
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="hero__search__dropdown__bottom">
-                        <a
-                          href="#"
-                          class="default-button default-button--bordered"
-                          >Clear</a
-                        >
-                        <a
-                          href="#"
-                          class="default-button default-button--theme2"
-                          >Apply</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="pv-nav-item">
-                    <a class="activated" href="javascript:void(0)">
-                      <span class="txt">On sale</span>
-                      <span class="close"><i class="fal fa-times"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pv-product__wrapper">
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-                <!-- product-card -->
-                <div class="product-card product-card--lnr">
-                  <button class="fav-button">
-                    <i class="fal fa-heart"></i>
-                  </button>
-                  <div class="product-card__image">
-                    <div class="l-badge l-badge--orange">-10% today</div>
-                    <div
-                      class="product-card__image__slider product-card__image__slider-active owl-carousel slider-arrow-2 slider-arrow-center slider-dots-1"
-                    >
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                      <a href="#" class="product-card__image__slide">
-                        <img
-                          src="images/product-card-1.jpg"
-                          alt=""
-                          class="img"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <a href="#" class="product-card__tc">
-                    <div class="product-card__tc__top">
-                      <div class="product-card__tc__tags">
-                        <div href="#" class="cheap">
-                          <i class="far fa-chart-network"></i>
-                          <span class="txt">4 Network</span>
-                        </div>
-                        <div href="#" class="cheap cheap--brown">
-                          <i class="fal fa-user-friends"></i>
-                          <span class="txt">Family</span>
-                        </div>
-                      </div>
-                      <h3>
-                        <span class="cheap cheap--green me-2">ADS</span>
-                        Best western Cedars Hotel
-                      </h3>
-                      <div class="loc-wrap">
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bed-alt"></i>
-                          </div>
-                          <span class="txt">6 beds</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-bath fa-flip-horizontal"></i>
-                          </div>
-                          <span class="txt">3 baths</span>
-                        </div>
-                        <div class="loc">
-                          <div class="icon">
-                            <i class="far fa-arrows"></i>
-                          </div>
-                          <span class="txt">1200 Sq. Fit</span>
-                        </div>
-                      </div>
-                      <div class="bt-line"></div>
-                    </div>
-                    <div class="product-card__tc__bottom">
-                      <div class="star">
-                        <img src="images/star.svg" alt="" class="star" />
-                        <span class="value">3.4</span>
-                        (340)
-                      </div>
-                      <div class="price-bx">$26,000</div>
-                    </div>
-                  </a>
-                </div>
-                <!-- product-card-end -->
-              </div>
-
-              <div class="pagination">
-                <ul>
-                  <li><a class="active" href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- pv-section-end -->
+        <!-- listing-details-section-end -->
 
         <!-- sug-section -->
         <section class="sug-section">
@@ -2268,103 +1496,103 @@
               <div
                 class="sug-section__title sec-title cont-blk cont-blk--center"
               >
-                <h2 class="h2">Explore top destination ✈️</h2>
+                <h2 class="h2">Explore by types of stays</h2>
                 <h4 class="h4 mb-0">
-                  Explore thousands of destinations around the world
+                  Explore houses based on 10 types of stays
                 </h4>
               </div>
 
               <div
-                class="sug-slider sug-slider-active owl-carousel slider-arrow-1"
+                class="sug-slider slider-a-active owl-carousel slider-arrow-1"
               >
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the Beauty of Brazil</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
-                <div class="slide-a slide-a--sug">
+                <div class="slide-a slide-a--ebt">
                   <div class="slide-a__image">
-                    <img src="images/explore-slide-1.jpg" alt="" class="img" />
+                    <img src="images/explore-by-type.jpg" alt="" class="img" />
                   </div>
                   <div class="slide-a__tc">
-                    <h4>Enjoy the great cold</h4>
-                    <p>17,288 experiences</p>
+                    <h4>Naturel House</h4>
+                    <p>188,288 properties</p>
                   </div>
                 </div>
               </div>

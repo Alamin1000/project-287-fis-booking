@@ -67,6 +67,30 @@
         --grid-item: 1;
     }
     
+
+    .about-hero__content .h4 {
+        font-size: 16px;
+    }
+    .about-hero__content .h1 {
+        font-size: 36px;
+        margin: 0 0 25px;
+    }
+
+    .founders__wrap {
+        grid-gap: 20px;
+    }
+    .founder-single__image {
+        border-radius: 15px;
+        height: 232px;
+    }
+
+    .facts__wrap {
+        grid-gap: 22px;
+    }
+
+    .contact-section__inner {
+        padding: 0;
+    }
 }
 
 
@@ -294,6 +318,44 @@
     .pv-section__title {
         margin-bottom: 45px;
     }
+
+    .about-hero__row {
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+    .about-hero__content {
+        text-align: center;
+    }
+
+
+    .about-hero-section {
+        padding: 65px 0 30px;
+    }
+    .about-hero__image {
+        width: 100%;
+    }
+
+    .founders__wrap {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .founder-single__image {
+        height: 357px;
+    }
+    .founder-section {
+        padding: 50px 0 70px;
+    }
+
+    .facts__wrap {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .facts-section {
+        padding: 70px 0;
+    }
+
+    .contact__left {
+        padding-right: 0;
+    }
 }
 
 
@@ -474,6 +536,48 @@
     }
     .product-card__tc__top .loc-wrap .loc .icon {
         display: none;
+    }
+
+    .about-hero__content .h1 {
+        font-size: 30px;
+        margin: 0 0 21px;
+    }
+
+    .founders__wrap {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+    }
+
+    .facts__wrap {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .fact__single h3 {
+        font-size: 24px;
+        margin: 0 0 10px;
+    }
+    .fact__single p {
+        font-size: 14px;
+    }
+
+    #scrollUp {
+        bottom: 65px;
+    }
+
+    .contact-section {
+        padding: 60px 0 80px;
+    }
+    .contact-section__title .h2 {
+        font-size: 30px;
+    }
+    .contact__row {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .contact__left {
+        width: 100%;
+    }
+    .contact__right {
+        width: 100%;
     }
 }
 
