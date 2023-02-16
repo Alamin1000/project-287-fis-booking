@@ -91,6 +91,37 @@
     .contact-section__inner {
         padding: 0;
     }
+
+
+    .lds__s-row {
+        gap: 30px;
+    }
+    .lds__s-row__left {
+        gap: 30px;
+    }
+    .lds__s-row__right {
+        width: 390px;
+    }
+    .lds-box {
+        padding: 18px 15px;
+        border-radius: 17px;
+    }
+    .lds-box__str__bt {
+        margin-top: 20px;
+        padding-top: 20px;
+        gap: 15px;
+        justify-content: space-between;
+    }
+    .lds-ai-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .lds__content .srt-line {
+        margin: 25px 0;
+    }
+
+    .img-modal-slider {
+        width: 700px;
+    }
 }
 
 
@@ -356,6 +387,19 @@
     .contact__left {
         padding-right: 0;
     }
+
+    .lds__s-row {
+        flex-wrap: wrap;
+    }
+    .lds__s-row__left {
+        width: 100%;
+    }
+    .lds__right__sticky {
+        display: none;
+    }
+    .lds__s-row__right {
+        width: 100%;
+    }
 }
 
 
@@ -578,6 +622,49 @@
     }
     .contact__right {
         width: 100%;
+    }
+
+    .gallery__grid__item--max {
+        grid-area: span 3/span 2;
+    }
+    .gallery__grid {
+        grid-gap: 4px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .gallery__grid__item:last-child {
+        display: none;
+    }
+    .gallery__grid__item {
+        border-radius: 5px;
+    }
+    .gallery__grid__item .all-button {
+        display: none;
+    }
+    .it-ma .mbl-hid {
+        display: none;
+    }
+    .lds-box__str__tc h2 {
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+    .it-menu {
+        gap: 0px;
+    }
+
+    .lds-list .lr .clm {
+        font-size: 14px;
+    }
+    .lds-host__info__auth {
+        margin: 0 0 25px;
+    }
+    .lds-map {
+        height: 300px;
+    }
+    .check-ttbl .tr .clm {
+        font-size: 14px;
+    }
+    .listing-details-section {
+        padding: 35px 0 60px;
     }
 }
 

@@ -159,6 +159,46 @@
     ],
   });
 
+  $(function () {
+    var owl = $(".img-modal-slider-active");
+    owl.owlCarousel({
+      loop: true,
+      margin: 0,
+      items: 1,
+      responsiveClass: true,
+      nav: true,
+      dots: false,
+      navText: [
+        '<i class="far fa-chevron-left"></i>',
+        '<i class="far fa-chevron-right"></i>',
+      ],
+      onInitialized: counter, //When the plugin has initialized.
+      onTranslated: counter, //When the translation of the stage has finished.
+    });
+
+    function counter(event) {
+      var element = event.target; // DOM element, in this example .owl-carousel
+      var items = event.item.count; // Number of items
+      var item = event.item.index + 1; // Position of the current item
+
+      // it loop is true then reset counter from 1
+      if (item > items) {
+        item = item - items;
+      }
+      $("#img-modal-counter").html(
+        `${item} <span class="sm">/ ${items}</span>`
+      );
+    }
+  });
+
+  // gallery-grid-item
+  $(".gallery__grid__item").click(function () {
+    $(".img-modal").addClass("active");
+  });
+  $(".img-modal-close").click(function () {
+    $(".img-modal").removeClass("active");
+  });
+
   //range-slider
   $(function () {
     $("#slider-range").slider({
